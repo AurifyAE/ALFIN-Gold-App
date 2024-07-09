@@ -39,184 +39,13 @@
 
 
   <style>
-    @media only screen and (max-width: 600px) {
-      body {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-      }
-
-      .logo {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .logo .profile-pic {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .logo img {
-        width: 40%;
-        margin-top: 25px;
-      }
-
-      .logo .support {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #fff;
-      }
-
-      .logo .support p {
-        font-size: 18px;
-        margin-bottom: 0px;
-      }
-
-      .cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-        padding: 0;
-      }
-
-      .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(250, 250, 250, 0.9);
-        width: 160px;
-        height: 135px;
-        margin: 7px;
-        border-radius: 15px;
-        padding: 20px;
-        padding-top: 25px;
-      }
-
-      .icon {
-        font-size: 20px;
-        color: white;
-        background-color: #CF9829;
-        border-radius: 50%;
-        padding: 12px;
-      }
-
-      p {
-        font-size: 15px;
-        font-weight: 600;
-      }
-
-      .card p:last-child {
-        font-size: 12px;
-      }
-
-      a {
-        text-decoration: none;
-        color: #CF9829;
-        outline: none;
-      }
-
-      a:hover {
-        text-decoration: none;
-        color: #CF9829;
-      }
-    }
-
-    @media only screen and (min-width: 600px) {
-      body {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-      }
-
-      .logo {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .logo .profile-pic {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .logo img {
-        width: 50%;
-        margin-top: 25px;
-      }
-
-      .logo .support {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #fff;
-      }
-
-      .logo .support p {
-        font-size: 18px;
-        margin-bottom: 0px;
-      }
-
-      .cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-        padding: 0;
-      }
-
-      .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(250, 250, 250, 0.9);
-        width: 160px;
-        height: 135px;
-        margin: 7px;
-        border-radius: 15px;
-        padding: 20px;
-        padding-top: 25px;
-      }
-
-      .icon {
-        font-size: 20px;
-        color: white;
-        background-color: #CF9829;
-        border-radius: 50%;
-        padding: 12px;
-      }
-
-      p {
-        font-size: 15px;
-        font-weight: 600;
-      }
-
-      .card p:last-child {
-        font-size: 12px;
-      }
-
-      a {
-        text-decoration: none;
-        color: #CF9829;
-        outline: none;
-      }
-
-      a:hover {
-        text-decoration: none;
-        color: #CF9829;
-      }
-    }
-
-
     body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin: 0;
-      padding: 0px;
+      padding: 200px;
       font-family: "arial", heletica, sans-serif;
       font-size: 24px;
       background-image: url('./10124992.jpg');
@@ -227,8 +56,197 @@
       -ms-animation: 20s linear 0s normal none infinite animate;
       -o-animation: 20s linear 0s normal none infinite animate;
       animation: 20s linear 0s normal none infinite animate;
-      color: #005043;
       height: 100vh;
+    }
+
+    .logo img {
+      width: 250px;
+    }
+
+    .support {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .support p {
+      color: #fff;
+      font-size: 35px;
+      font-weight: 600;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rows {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .rows .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      padding-top: 30px;
+      background-color: rgba(250, 250, 250, 0.9);
+      width: 220px;
+      height: 180px;
+      margin: 7px;
+      border-radius: 15px;
+    }
+
+    .card .icon {
+      font-size: 35px;
+      color: white;
+      background-color: #CF9829;
+      border-radius: 50%;
+      padding: 12px;
+    }
+
+    .card p {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #CF9829;
+      outline: none;
+    }
+
+    .card a:hover {
+      text-decoration: none;
+      color: #CF9829;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      body {
+        padding: 20px;
+        height: 100vh;
+      }
+
+      .logo img {
+        width: 180px;
+      }
+
+      .support p {
+        font-size: 20px;
+      }
+
+      .rows .card {
+        padding: 10px;
+        padding-top: 20px;
+        width: 160px;
+        height: 135px;
+      }
+
+      .card .icon {
+        font-size: 20px;
+        padding: 12px;
+      }
+
+      .card p {
+        font-size: 15px;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      body {
+        padding: 20px;
+        height: 100vh;
+      }
+
+      .logo img {
+        width: 200px;
+      }
+
+      .support p {
+        font-size: 30px;
+      }
+
+      .rows .card {
+        padding: 15px;
+        padding-top: 20px;
+        width: 200px;
+        height: 175px;
+      }
+
+      .card .icon {
+        font-size: 25px;
+        padding: 12px;
+      }
+
+      .card p {
+        font-size: 20px;
+      }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      body {
+        padding: 20px;
+        height: 100vh;
+      }
+
+      .logo img {
+        width: 220px;
+      }
+
+      .support p {
+        font-size: 35px;
+      }
+
+      .rows .card {
+        padding: 15px;
+        padding-top: 30px;
+        width: 250px;
+        height: 200px;
+      }
+
+      .card .icon {
+        font-size: 30px;
+      }
+
+      .card p {
+        font-size: 25px;
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      body {
+        padding: 20px;
+        height: 100vh;
+      }
+
+      .logo img {
+        width: 240px;
+      }
+
+      .support p {
+        font-size: 40px;
+      }
+
+      .rows .card {
+        padding: 15px;
+        padding-top: 30px;
+        width: 320px;
+        height: 270px;
+      }
+
+      .card .icon {
+        font-size: 35px;
+      }
+
+      .card p {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
@@ -245,7 +263,7 @@
   </div>
 
   <div class="cards">
-    <div class="row">
+    <div class="rows">
       <a href="tel:+971544048993">
         <div class="card">
           <i class="fa-solid fa-phone icon"></i>
@@ -261,7 +279,7 @@
         </div>
       </a>
     </div>
-    <div class="row">
+    <div class="rows">
       <a href="mailto:info@naifgold.com">
         <div class="card">
           <i class="fa-regular fa-envelope icon"></i>
